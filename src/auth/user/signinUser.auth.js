@@ -9,6 +9,7 @@ const SigninUser = () => {
       <Link to="/">
         <img
           className="img-logoOficial"
+          loading="lazy"
           src={LogoOficial}
           alt="Logo Don Rigo"
         />
