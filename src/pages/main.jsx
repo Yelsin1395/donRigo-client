@@ -1,12 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { NavbarUser } from "../components";
 
 const Main = () => {
   return (
-    <span>
-      Página principal que ya esta puesta con git hub y esta es una prueba que
-      mis conocimiento hasta aquí han avanzado bastante y estyo orgulloso de ti
-      Broly
-    </span>
+    <Fragment>
+      <NavbarUser />
+      <span>
+        Página principal que ya esta puesta con git hub y esta es una prueba que
+        mis conocimiento hasta aquí han avanzado bastante y estyo orgulloso de
+        ti Broly
+      </span>
+    </Fragment>
   );
 };
 
