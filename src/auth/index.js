@@ -1,3 +1,5 @@
 import Login from "./login";
 import TypeSignin from "./type.signin";
-export { Login, TypeSignin };
+import SigninUser from "./user/signinUser.auth";
+
+export { Login, TypeSignin, SigninUser };

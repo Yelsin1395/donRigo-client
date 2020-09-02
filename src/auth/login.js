@@ -8,12 +8,14 @@ const Login = () => {
   return (
     <div className="content-login">
       <form className="content-form-donRigo">
-        <img
-          className="img-logoOficial"
-          src={LogoOficial}
-          alt="Logo Don Rigo"
-          loading="lazy"
-        />
+        <Link to="/">
+          <img
+            className="img-logoOficial"
+            src={LogoOficial}
+            alt="Logo Don Rigo"
+            loading="lazy"
+          />
+        </Link>
         <div className="input-group-donRigo">
           <input
             type="email"

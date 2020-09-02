@@ -47,7 +47,7 @@
 .input-group-donRigo {
   margin-bottom: 20px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   .input-form-donRigo {
     background: none;
@@ -70,13 +70,13 @@
     color: $secundary;
     font-weight: bold;
     font-size: 13pt;
-    display: block;
   }
 }
 
 .btn-primary-donRigo {
   background: linear-gradient(90deg, rgb(255, 179, 0), rgb(255, 148, 15));
-  width: 130px;
+  // width: 130px;
+  padding: 0 15px 0 15px;
   line-height: 35px;
   border: none;
   border-radius: 60px;
