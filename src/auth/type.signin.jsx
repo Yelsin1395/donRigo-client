@@ -15,12 +15,15 @@ const TypeSignin = () => {
         />
       </Link>
       <Link to="/signin/typeuser/user">
-        <button className="btn-primary-donRigo" style={{ width: "200px" }}>
+        <button
+          className="btn-primary-donRigo"
+          style={{ width: "250px", marginBottom: "20px" }}
+        >
           Usuario
         </button>
       </Link>
       <Link to="/signin/typeuser/company">
-        <button className="btn-primary-donRigo" style={{ width: "200px" }}>
+        <button className="btn-primary-donRigo" style={{ width: "250px" }}>
           Empresa
         </button>
       </Link>

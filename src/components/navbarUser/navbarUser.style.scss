@@ -1,0 +1,54 @@
+@import "../../themes/style.scss";
+
+.content-navbar {
+  width: 100%;
+  background: black;
+  position: relative;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.content-img-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .img-nav {
+    width: 70px;
+  }
+}
+
+.content-btn-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .btn-login-default {
+    font-size: 14pt;
+    // margin-top: -18px;
+    margin-right: 20px;
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-img-nav {
+    .img-nav {
+      width: 55px;
+    }
+  }
+
+  .content-btn-nav {
+    .btn-login-default {
+      margin-right: 10px;
+    }
+
+    // .btn-primary-donRigo {
+
+    // }
+  }
+}
