@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import { NavbarUser } from "../components";
 import Map from "../components/maps/maps.component";
 
@@ -24,10 +24,8 @@ const navigatorPromise = new Promise((resolve, reject) => {
 const Main = () => {
   const [ubigeo, setUbigeo] = useState({});
 
-  useEffect(() => {
-    navigatorPromise.then((resul) => {
-      setUbigeo(resul);
-    });
+  navigatorPromise.then((resul) => {
+    setUbigeo(resul);
   });
 
   const { lat, lng } = ubigeo;
@@ -39,8 +37,9 @@ const Main = () => {
       <span>
         Latitud: {lat} and longitud: {lng}
       </span>
+
       <Map
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.ex&key=AIzaSyAuCOk0i5KrN8ve89V2rI4erUOvK_NrTc4`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=weekly.ex&key=AIzaSyAuCOk0i5KrN8ve89V2rI4erUOvK_NrTc4`}
         containerElement={<div style={{ height: "400px" }} />}
         mapElement={<div style={{ height: "100%" }} />}
         loadingElement={<p>Cargando...</p>}
