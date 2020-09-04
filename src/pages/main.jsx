@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { NavbarUser } from "../components";
 import Map from "../components/maps/maps.component";
 
@@ -24,8 +24,10 @@ const navigatorPromise = new Promise((resolve, reject) => {
 const Main = () => {
   const [ubigeo, setUbigeo] = useState({});
 
-  navigatorPromise.then((resul) => {
-    setUbigeo(resul);
+  useEffect(() => {
+    navigatorPromise.then((resul) => {
+      setUbigeo(resul);
+    });
   });
 
   const { lat, lng } = ubigeo;

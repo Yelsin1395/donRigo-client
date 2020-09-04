@@ -10,7 +10,7 @@ const Map = (props) => {
   console.log(props.latitud, props.longitude, props);
   return (
     <GoogleMap
-      defaultZoom={20}
+      defaultZoom={18}
       defaultCenter={{ lat: props.latitud, lng: props.longitude }}
     >
       <Marker
