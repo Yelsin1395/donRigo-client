@@ -7,7 +7,6 @@ import {
 } from "react-google-maps";
 
 const Map = (props) => {
-  // console.log(props.latitud, props.longitude, props);
   if (props.latitud !== undefined && props.longitude !== undefined) {
     return (
       <GoogleMap
@@ -23,7 +22,11 @@ const Map = (props) => {
       </GoogleMap>
     );
   } else {
-    return <p>El componente está cargaando</p>;
+    return (
+      <p>
+        El componente está cargando o no ha aceptado permisos de geolocalización
+      </p>
+    );
   }
 };
 
