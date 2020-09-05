@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { navigatorPromise } from "../controllers";
 import { googleMapsApi } from "../apis";
-import { NavbarUser } from "../components";
+import { LandingUser } from "../resources";
 import Map from "../components/maps/maps.component";
 
 const Main = () => {
@@ -14,8 +14,7 @@ const Main = () => {
   const { lat, lng } = ubigeo;
 
   return (
-    <Fragment>
-      <NavbarUser />
+    <LandingUser>
       <Map
         googleMapURL={googleMapsApi}
         containerElement={<div style={{ height: "400px" }} />}
@@ -24,7 +23,7 @@ const Main = () => {
         latitud={lat}
         longitude={lng}
       />
-    </Fragment>
+    </LandingUser>
   );
 };
 
