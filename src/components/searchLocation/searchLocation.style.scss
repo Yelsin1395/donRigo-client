@@ -3,28 +3,9 @@
 .content-searchLocation {
   width: 100%;
   position: relative;
-  .container {
-    outline: 1px solid red;
-  }
 }
 
 .title-country-location {
   font-family: $font-primary;
   text-align: center;
-}
-
-.input-from2-donRigo {
-  width: 100%;
-  border: none;
-  border-bottom: 1.5px solid $white;
-  background: none;
-  outline: 0;
-  color: $white;
-  font-size: 12pt;
-  padding: 0 15px 5px 15px;
-  margin-bottom: 20px;
-
-  &::placeholder {
-    color: $white;
-  }
 }

@@ -72,6 +72,26 @@
   }
 }
 
+.input-from2-donRigo {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid $white;
+  background: none;
+  outline: 0;
+  color: $white;
+  font-size: 12pt;
+  padding: 0 15px 5px 15px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    color: $white;
+  }
+
+  .option-from-donRigo {
+    color: $black !important;
+  }
+}
+
 .btn-primary-donRigo {
   background: linear-gradient(90deg, rgb(255, 179, 0), rgb(255, 148, 15));
   padding: 10px 15px 10px 15px;

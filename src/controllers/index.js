@@ -1,3 +1,4 @@
 import navigatorPromise from "./navigator.controller";
+import ubigeoController from "./ubigeo.controller";
 
-export { navigatorPromise };
+export { navigatorPromise, ubigeoController };
