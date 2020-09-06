@@ -3,7 +3,9 @@
 .content-navbar {
   width: 100%;
   background: black;
-  position: relative;
+  position: fixed;
+  z-index: $zindex1;
+  top: 0;
   padding: 10px 20px;
   display: grid;
   grid-template-columns: auto auto;

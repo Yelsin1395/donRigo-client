@@ -7,9 +7,14 @@
 html,
 body {
   width: 100%;
+  padding-top: 48.5px;
   font-family: $font-secundary !important;
   background: #1b1b1b !important;
   color: $white !important;
+
+  @media (max-width: 575.98px) {
+    padding-top: 41.5px;
+  }
 }
 
 a {
