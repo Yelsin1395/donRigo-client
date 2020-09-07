@@ -1,0 +1,1 @@
+const getGeocoding = "https://apis.geodir.co/geocoding/v1/json?latlon=-5.145257995869924,-79.00149221256042&key=17257319-6140-4474-bcb0-f8adec0243fa"

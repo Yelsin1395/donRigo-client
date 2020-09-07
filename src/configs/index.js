@@ -1,3 +1,4 @@
 const GOOGLE_MAPS_KEY = "AIzaSyAuCOk0i5KrN8ve89V2rI4erUOvK_NrTc4";
+const GEODIR_KEY = "17257319-6140-4474-bcb0-f8adec0243fa";
 
-export { GOOGLE_MAPS_KEY };
+export { GOOGLE_MAPS_KEY, GEODIR_KEY };

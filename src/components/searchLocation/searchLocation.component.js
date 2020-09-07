@@ -1,17 +1,48 @@
 import React, { useState, useEffect } from "react";
 import "./searchLocation.style.scss";
-import { ubigeoController } from "../../controllers";
+import { ubigeoController, getGeodirGeocoding } from "../../controllers";
 
 const getUbigeos = ubigeoController;
 
-const SearchLocation = () => {
+const SearchLocation = ({ latitude, longitude }) => {
   const [ubigeo, setUbigeo] = useState([]);
   const [inputValue, setInputValue] = useState({
-    departamento: "",
-    provincia: "",
-    distrito: "",
+    country: "",
+    departament: "",
+    province: "",
+    district: "",
   });
-  const { departamento, provincia } = inputValue;
+  const { country, departament, province, district } = inputValue;
+
+  if (latitude !== "" && longitude !== "") {
+    getGeodirGeocoding(latitude, longitude)
+      .then((res) => {
+        if (res !== undefined) {
+          const fun = setTimeout(() => {
+            let codeCountry = res.country;
+            let codeDep = res.ubigeo[0];
+            let codePro = res.ubigeo[1];
+            let codeDis = res.ubigeo[2];
+            setInputValue({
+              ...inputValue,
+              country: codeCountry,
+              departament: codeDep,
+              province: codePro,
+              district: codeDis,
+            });
+          });
+
+          if (
+            inputValue.country !== "" &&
+            inputValue.departament !== "" &&
+            inputValue.district !== ""
+          ) {
+            clearTimeout(fun);
+          }
+        }
+      })
+      .catch((error) => console.log(error));
+  }
 
   useEffect(() => {
     getUbigeos().then((res) => {
@@ -33,13 +64,13 @@ const SearchLocation = () => {
   );
 
   let pro = ubigeo.filter(
-    (u, i) => u.departamento === departamento && u.distrito === "01"
+    (u, i) => u.departamento === departament && u.distrito === "01"
   );
 
   let dis = ubigeo.filter(
     (u, i) =>
-      u.departamento === departamento &&
-      u.provincia === provincia &&
+      u.departamento === departament &&
+      u.provincia === province &&
       u.distrito > "00"
   );
 
@@ -51,22 +82,20 @@ const SearchLocation = () => {
     });
   };
 
-  // console.log(inputValue);
-
   return (
     <form className="content-searchLocation">
       <div className="container grid-md">
         <div className="columns">
           <div className="column col-12 col-sm-12">
-            <h1 className="title-country-location">Perú</h1>
+            <h1 className="title-country-location">{country}</h1>
           </div>
 
           <div className="column col-4 col-sm-12">
             <div className="form-group">
               <select
                 className="input-from2-donRigo"
-                name="departamento"
-                defaultValue=""
+                name="departament"
+                value={departament}
                 onChange={inputChange}
               >
                 <option className="option-from-donRigo" value="">
@@ -88,8 +117,8 @@ const SearchLocation = () => {
           </div>
 
           <div className="column col-4 col-sm-12">
-            {departamento === "" ? (
-              <select className="input-from2-donRigo" name="provincia" disabled>
+            {departament === "" ? (
+              <select className="input-from2-donRigo" name="province" disabled>
                 <option className="option-from-donRigo" value="">
                   Provincia
                 </option>
@@ -97,9 +126,9 @@ const SearchLocation = () => {
             ) : (
               <select
                 className="input-from2-donRigo"
-                name="provincia"
+                name="province"
                 onChange={inputChange}
-                defaultValue=""
+                value={province}
               >
                 <option className="option-from-donRigo" value="">
                   Provincia
@@ -120,8 +149,8 @@ const SearchLocation = () => {
           </div>
 
           <div className="column col-4 col-sm-12">
-            {provincia === "" ? (
-              <select className="input-from2-donRigo" name="distrito" disabled>
+            {province === "" ? (
+              <select className="input-from2-donRigo" name="district" disabled>
                 <option className="option-from-donRigo" value="">
                   Distrito
                 </option>
@@ -129,7 +158,8 @@ const SearchLocation = () => {
             ) : (
               <select
                 className="input-from2-donRigo"
-                name="distrito"
+                name="district"
+                value={district}
                 onChange={inputChange}
               >
                 <option className="option-from-donRigo" value="">
