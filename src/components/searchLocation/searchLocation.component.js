@@ -45,9 +45,11 @@ const SearchLocation = ({ latitude, longitude }) => {
   }
 
   useEffect(() => {
-    getUbigeos().then((res) => {
-      setUbigeo(res.data);
-    });
+    getUbigeos()
+      .then((res) => {
+        setUbigeo(res.data);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   const arrayDep = [];
