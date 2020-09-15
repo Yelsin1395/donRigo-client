@@ -1,3 +1,4 @@
-import Main from "./main";
+import Main from "./main.page";
+import DetailBusiness from "./detailBusiness.page";
 
-export { Main };
+export { Main, DetailBusiness };

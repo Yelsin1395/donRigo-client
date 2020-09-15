@@ -1,5 +1,13 @@
 @import "../../themes/style.scss";
 
+.link_cardPrimary {
+  color: $white !important;
+
+  &:hover {
+    color: $secundary !important;
+  }
+}
+
 .content-cardPrimary {
   position: relative;
   width: 100%;

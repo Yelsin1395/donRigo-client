@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Main } from "../pages";
+import { DetailBusiness, Main } from "../pages";
 import { Login, TypeSignin, SigninUser, SigninCompany } from "../auth";
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/signin/typeuser" component={TypeSignin} />
         <Route exact path="/signin/typeuser/user" component={SigninUser} />
+        <Route exact path="/detailBusiness/:id" component={DetailBusiness} />
         <Route
           exact
           path="/signin/typeuser/company"
