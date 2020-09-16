@@ -101,6 +101,28 @@ const OrderDetail = () => {
                 </div>
               </div>
             </div>
+
+            <div className="column col-12 col-sm-12">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  marginBottom: "20px",
+                }}
+              >
+                <button
+                  className="btn-primary-donRigo"
+                  style={{ marginBottom: "15px" }}
+                >
+                  Pago con tarjeta
+                </button>
+                <button className="btn-primary-donRigo">
+                  Pago en efectivo
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
