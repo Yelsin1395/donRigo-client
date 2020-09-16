@@ -1,0 +1,37 @@
+@import "../../themes/style.scss";
+
+.content-tape {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  border-radius: 50px;
+  padding: 0 20px 0 20px;
+  p {
+    color: $black;
+    font-size: 12pt;
+    font-weight: bolder;
+  }
+}
+
+.content-controllers {
+  display: flex;
+  align-items: center;
+  .btn-tape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

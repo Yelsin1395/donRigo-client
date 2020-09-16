@@ -1,5 +1,7 @@
-import Main from "./main.page";
-import DetailBusiness from "./detailBusiness.page";
-import OrderDetail from "./orderDetail.page";
+import Main from "./user/main.page";
+import DetailBusiness from "./user/detailBusiness.page";
+import OrderDetail from "./user/orderDetail.page";
+import MainCompany from "./company/mainCompany.page";
+import MyCardMenú from "./company/myCardMenu.page";
 
-export { Main, DetailBusiness, OrderDetail };
+export { Main, DetailBusiness, OrderDetail, MainCompany, MyCardMenú };

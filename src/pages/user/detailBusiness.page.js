@@ -1,6 +1,7 @@
 import React from "react";
-import { LandingUser } from "../resources";
-import { ProfileBusiness } from "../components";
+import { LandingUser } from "../../resources";
+import { ProfileBusiness } from "../../components";
+import { Attribution } from "css.gg";
 import { Link } from "react-router-dom";
 
 const DetailBusiness = () => {
@@ -9,6 +10,10 @@ const DetailBusiness = () => {
       <div className="container grid-md">
         <div className="columns">
           <div className="content-btnFloat-donRigo">
+            <button className="floatBtn-donRigo">
+              <Attribution style={{ transform: "scale(1.5)" }} />
+            </button>
+
             <Link to={`/orderDetail`}>
               <button className="floatBtn-donRigo">
                 <b>Pedir</b>

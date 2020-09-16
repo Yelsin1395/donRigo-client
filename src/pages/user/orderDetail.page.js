@@ -1,5 +1,5 @@
 import React from "react";
-import { LandingUser } from "../resources";
+import { LandingUser } from "../../resources";
 
 const OrderDetail = () => {
   return (

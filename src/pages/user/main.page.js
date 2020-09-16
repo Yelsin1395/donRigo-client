@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import { LandingUser } from "../resources";
-import { SearchLocation, CardPrimary } from "../components";
-import { navigatorPromise } from "../controllers";
+import { LandingUser } from "../../resources";
+import { SearchLocation, CardPrimary } from "../../components";
+import { navigatorPromise } from "../../controllers";
 import { Search, Qr, Calibrate } from "css.gg";
 
 const Main = () => {

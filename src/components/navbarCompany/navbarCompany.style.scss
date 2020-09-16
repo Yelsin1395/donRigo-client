@@ -1,0 +1,15 @@
+@import "../../themes/style.scss";
+
+.content-navbarCompany {
+  width: 100%;
+  background: black;
+  position: fixed;
+  z-index: $zindex3;
+  top: 0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.img-navbarCompany {
+  width: 70px;
+}
