@@ -1,4 +1,9 @@
 //color
+.tittle-primary {
+  font-family: $font-primary;
+  font-size: 25pt;
+}
+
 .text-primary {
   color: $primary;
 }
@@ -95,7 +100,6 @@
 .btn-primary-donRigo {
   background: linear-gradient(90deg, rgb(255, 179, 0), rgb(255, 148, 15));
   padding: 10px 15px 10px 15px;
-  // line-height: 35px;
   border: none;
   border-radius: 60px;
   font-weight: bold;
@@ -103,6 +107,31 @@
   font-size: 12pt;
   cursor: pointer;
   outline: none;
+}
+
+.content-btnFloat-donRigo {
+  position: fixed;
+  z-index: $zindex1;
+  bottom: 25px;
+  right: 25px;
+
+  .floatBtn-donRigo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgb(255, 179, 0), rgb(255, 148, 15));
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border: 3px solid $white;
+    }
+  }
 }
 
 .text-form {
@@ -132,4 +161,29 @@
   /* change div to reference your elements you put in <Masonry> */
   // background: grey;
   margin-bottom: 30px;
+}
+
+.content-category-car {
+  .toggle-category {
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+  }
+}
+
+.description-category {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.items-title-category {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px !important;
+  font-weight: bold;
+}
+
+.description-plate-categoruy {
+  margin-bottom: 20px !important;
 }

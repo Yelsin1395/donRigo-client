@@ -1,13 +1,20 @@
 import React from "react";
 import { LandingUser } from "../resources";
 import { ProfileBusiness } from "../components";
-import "./style.scss";
+import { Link } from "react-router-dom";
 
 const DetailBusiness = () => {
   return (
     <LandingUser>
       <div className="container grid-md">
         <div className="columns">
+          <div className="content-btnFloat-donRigo">
+            <Link to={`/orderDetail`}>
+              <button className="floatBtn-donRigo">
+                <b>Pedir</b>
+              </button>
+            </Link>
+          </div>
           <div className="column col-12 col-sm-12">
             <ProfileBusiness
               imgProfile="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/15826541_416850658646798_5356154507049001084_n.png?_nc_cat=100&_nc_sid=09cbfe&_nc_eui2=AeEU9gIy8FKHj1Kqv2eKbb4kYtgEvHHsJNJi2AS8cewk0r5mthlWBrDHyvXDbI9lWd_lBo_ITKfwL6vzryLTaZDW&_nc_ohc=kVsk6Vzdy_EAX98_lO_&_nc_ht=scontent.ftru1-1.fna&oh=1082b23be454e365740d75271b38a50b&oe=5F8227A2"

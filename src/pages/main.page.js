@@ -3,6 +3,7 @@ import Masonry from "react-masonry-css";
 import { LandingUser } from "../resources";
 import { SearchLocation, CardPrimary } from "../components";
 import { navigatorPromise } from "../controllers";
+import { Search, Qr, Calibrate } from "css.gg";
 
 const Main = () => {
   const [geolocation, setGeolocation] = useState({});
@@ -20,6 +21,19 @@ const Main = () => {
 
       <div className="container grid-md">
         <div className="columns">
+          <div className="content-btnFloat-donRigo">
+            <button className="floatBtn-donRigo" title="Buscar local">
+              <Search style={{ transform: "scale(1.5)" }} />
+            </button>
+
+            <button className="floatBtn-donRigo" title="Filtro">
+              <Calibrate style={{ transform: "scale(1.3)" }} />
+            </button>
+
+            <button className="floatBtn-donRigo" title="Scanner de QR">
+              <Qr style={{ transform: "scale(1.5)" }} />
+            </button>
+          </div>
           <div className="column col-12 col-sm-12">
             <Masonry
               breakpointCols={{ default: 3, 575.98: 2 }}
