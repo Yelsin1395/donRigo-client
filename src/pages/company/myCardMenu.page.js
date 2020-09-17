@@ -47,6 +47,7 @@ const MyCardMenú = () => {
               controllers={
                 <Fragment>
                   <button
+                    type="button"
                     className="btn-tape"
                     style={{ background: "#ff940f" }}
                     title="Editar"
@@ -54,6 +55,7 @@ const MyCardMenú = () => {
                     <Undo style={{ transform: "scale()" }} />
                   </button>
                   <button
+                    type="button"
                     className="btn-tape"
                     style={{ background: "#ff304f" }}
                   >

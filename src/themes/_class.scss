@@ -97,6 +97,26 @@
   }
 }
 
+.input-from3-donRigo {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid $black;
+  background: none;
+  outline: 0;
+  color: $black;
+  font-size: 12pt;
+  padding: 0 15px 5px 15px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    color: $black;
+  }
+
+  .option-from-donRigo {
+    color: $black !important;
+  }
+}
+
 .btn-primary-donRigo {
   background: linear-gradient(90deg, rgb(255, 179, 0), rgb(255, 148, 15));
   padding: 10px 15px 10px 15px;
@@ -104,6 +124,16 @@
   border-radius: 60px;
   font-weight: bold;
   color: $black;
+  font-size: 12pt;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-secundary-donRigo {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 60px;
+  font-weight: bold;
   font-size: 12pt;
   cursor: pointer;
   outline: none;
@@ -186,4 +216,10 @@
 
 .description-plate-categoruy {
   margin-bottom: 20px !important;
+}
+
+.group-from-company {
+  background: $white;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
 }

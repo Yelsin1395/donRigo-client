@@ -1,0 +1,12 @@
+@import "../../../themes/style.scss";
+
+.group-from-company {
+  position: fixed;
+  left: 15%;
+  right: 15%;
+  transition: all 0.3s;
+  @media (max-width: 575.98px) {
+    left: 8%;
+    right: 8%;
+  }
+}
