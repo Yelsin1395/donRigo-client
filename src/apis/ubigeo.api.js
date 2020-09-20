@@ -1,3 +1,3 @@
-const getUbigeos = "http://localhost:2800/api_v1/ubigeo";
+const getUbigeos = "https://donrigo-api.herokuapp.com/v1/ubigeo";
 
 export default getUbigeos;
