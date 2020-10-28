@@ -42,7 +42,7 @@ const Main = () => {
             >
               <CardPrimary
                 link="/detailBusiness/1"
-                profileBusiness="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/15826541_416850658646798_5356154507049001084_n.png?_nc_cat=100&_nc_sid=09cbfe&_nc_eui2=AeEU9gIy8FKHj1Kqv2eKbb4kYtgEvHHsJNJi2AS8cewk0r5mthlWBrDHyvXDbI9lWd_lBo_ITKfwL6vzryLTaZDW&_nc_ohc=kVsk6Vzdy_EAX98_lO_&_nc_ht=scontent.ftru1-1.fna&oh=1082b23be454e365740d75271b38a50b&oe=5F8227A2"
+                profileBusiness="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 state="open"
                 calification="4.8"
                 name="D'chota"
@@ -52,7 +52,7 @@ const Main = () => {
 
               <CardPrimary
                 link="/detailBusiness/2"
-                profileBusiness="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/27541116_899035740270617_919724440639207100_n.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_eui2=AeHPmFk6VKDMpD9qok_eColDnA1ixrv_jPucDWLGu_-M-_QqVz2XKXILrqTyNIOZSU4buorSH00vErkinwzM95Hr&_nc_ohc=8m4D4uMf7PQAX8vN8Nc&_nc_ht=scontent.ftru1-1.fna&oh=e8a96e90fc3a5b47736f1cbc74ce30d8&oe=5F828D00"
+                profileBusiness="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 state="close"
                 calification="4.8"
                 name="La B"
